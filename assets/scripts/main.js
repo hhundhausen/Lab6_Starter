@@ -24,11 +24,11 @@ function getRecipesFromStorage() {
   // A9. TODO - Complete the functionality as described in this function
   //           header. It is possible in only a single line, but should
   //           be no more than a few lines. 
-  var rep = localStorage.getItem('recipes');
-  if(JSON.parse(rep).length === 0) 
+ // var rep = localStorage.getItem('recipes');
+  /* if(JSON.parse(rep).length === 0) 
     return []; 
-
-  return JSON.parse(rep);  // check if its right - helena 
+*/
+  return JSON.parse(localStorage.getItem('recipes')) || []; 
 }
 
 /**
